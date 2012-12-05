@@ -1,5 +1,6 @@
 *.class
 *.log
+config.scala
 
 # sbt specific
 dist/*

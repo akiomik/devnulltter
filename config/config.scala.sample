@@ -1,0 +1,24 @@
+/*
+ * Input your following values,
+ *   - consumer key
+ *   - consumer secret
+ *   - access token
+ *   - access secret
+ * and rename this file to "config.scala".
+ */
+
+package devnulltter
+
+import devnulltter._
+
+new Config {
+    val dev = "/dev/nulltter"
+
+    val consumerKey = ""
+    val consumerSecret = ""
+    val consumer = Consumer(consumerKey, consumerSecret)
+
+    val token  = ""
+    val secret = ""
+    val token = new Token(token, secret)
+}
