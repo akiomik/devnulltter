@@ -5,7 +5,7 @@ import com.twitter.util._
 import devnulltter._
 
 object DevNulltter {
-	def main(args: Array[String]) {
+    def main(args: Array[String]) {
         // Read config file
         val confpath = "config/config.scala"
         val conf = try {
@@ -19,8 +19,8 @@ object DevNulltter {
         }
 
         // Open named pipe
-		var reader = try {
-			new DeviceReader(conf.dev)
+        var reader = try {
+            new DeviceReader(conf.dev)
         }
         catch {
             case e: Exception => {
@@ -60,5 +60,5 @@ object DevNulltter {
         }
 
         reader.close
-	}
+    }
 }
