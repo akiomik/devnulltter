@@ -1,8 +1,14 @@
+import AssemblyKeys._ // put this at the top of the file
+
+assemblySettings
+
 name := "devnulltter"
 
 version := "1.0"
 
 scalaVersion := "2.9.2"
+
+jarName in assembly := "devnulltter.jar"
 
 scalacOptions += "-deprecation"
 
