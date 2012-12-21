@@ -1,7 +1,5 @@
-devnulltter
+/dev/nulltter
 ===========
-
-# /dev/nulltter
 
 ## Abstract
 /dev/nulltter is a simple CLI twitter client.
