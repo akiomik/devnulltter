@@ -43,7 +43,7 @@ $ sbt "project daemon" assembly
 4. Set your access token
   ```bash
 $ chmod 755 authorizer/target/authorizer.jar
-$ authorizer/target/authorizer.jar  # get access token
+$ java -jar authorizer/target/authorizer.jar  # get access token
 $ vim config/config.scala           # and write it
   ```
 
@@ -52,10 +52,13 @@ $ vim config/config.scala           # and write it
 $ sudo mkfifo /dev/nulltter
   ```
 
+  When you can't create `/dev/nulltter`, create it in another place.
+  Then edit the path in `config/config.scala`.
+
 6. Let's Tweet
    ```bash
-$ chmod 755 daemon/target/devnulltter.jar
-$ daemon/target/devnulltter.jar &
+$ chmod 755 daemon/target/devnulltterd.jar
+$ java -jar daemon/target/devnulltterd.jar &
 $ echo "/dev/nulltter now!" > /dev/nulltter
    ```
 
