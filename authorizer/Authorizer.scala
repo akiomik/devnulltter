@@ -15,7 +15,7 @@ object Authorizer {
         }
         catch {
             case e: Exception => {
-                println("Failed to open " + confpath + ".")
+                println("Failed to open '" + confpath + "'.")
                 sys.exit(1)
             }
         }
@@ -48,7 +48,7 @@ object Authorizer {
             sys.exit(1)
         }
 
-        println("Write your access token in 'config.scala'")
+        println("Write your access token in '" + confpath + "'.")
         println("access token : " + accessToken.getToken())
         println("access token secret : " + accessToken.getTokenSecret())
     }
