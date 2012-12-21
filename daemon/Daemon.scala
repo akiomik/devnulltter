@@ -44,13 +44,17 @@ object Daemon {
             }
         }
 
-        // continue to try reading from file, and post
-        while (true) {
+        // continue to try reading tweet from file, and post it
+        var continue = true
+        while (continue) {
             val tweet = reader.read
 
             if (!(tweet == null || tweet.isEmpty || tweet.length > 140)) {
                 try {
-                    twitter.post(tweet)
+                    tweet match {
+                        case "exit" => continue = false
+                        case _      => twitter.post(tweet)
+                    }
                 }
                 catch {
                     // e > /dev/null
