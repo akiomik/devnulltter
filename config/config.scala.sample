@@ -7,8 +7,6 @@
  * and rename this file to "config.scala".
  */
 
-package devnulltter
-
 import devnulltter._
 
 new Config {
@@ -18,7 +16,7 @@ new Config {
     val consumerSecret = ""
     val consumer = Consumer(consumerKey, consumerSecret)
 
-    val token  = ""
-    val secret = ""
-    val token = new Token(token, secret)
+    val accessToken = ""
+    val accessSecret = ""
+    val token = new Token(accessToken, accessSecret)
 }
