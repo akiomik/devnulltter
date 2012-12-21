@@ -4,7 +4,7 @@ import java.io._
 import com.twitter.util._
 import devnulltter._
 
-object DevNulltter {
+object Daemon {
     def main(args: Array[String]) {
         // Read config file
         val confpath = "config/config.scala"

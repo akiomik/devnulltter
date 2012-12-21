@@ -1,14 +1,14 @@
-import AssemblyKeys._ // put this at the top of the file
+import AssemblyKeys._
 
 assemblySettings
 
-name := "devnulltter"
+name := "authorizer"
 
 version := "1.0"
 
 scalaVersion := "2.9.2"
 
-jarName in assembly := "devnulltter.jar"
+jarName in assembly := "authorizer.jar"
 
 scalacOptions += "-deprecation"
 
