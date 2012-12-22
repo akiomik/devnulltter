@@ -7,7 +7,7 @@
 ## Usage
 * update a status
   ```bash
-$ echo 'Hoolay!' > /dev/nulltter
+$ echo 'hooray!' > /dev/nulltter
   ```
 
 * shutdown the client
@@ -16,6 +16,7 @@ $ echo 'exit' > /dev/nulltter
   ```
 
 ## Repuirements
+- java
 - [sbt](http://scala-sbt.org/)
 - [twitter application consumer key](https://dev.twitter.com/apps)
 
